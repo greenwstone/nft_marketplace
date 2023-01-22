@@ -102,7 +102,7 @@ a {
 
 /* -----  Layout  ----- */
 .container {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -150,7 +150,7 @@ a {
   position: relative;
 }
 .header__button::before {
-  content: url('../img/svg/header-button-icon.svg');
+  content: url('../img/header/header-button-icon.svg');
   position: absolute;
   top: 20px;
   left: 30px;
@@ -195,7 +195,7 @@ a {
   margin-bottom: 30px;
 }
 .top__button::before {
-  content: url('../img/svg/top-button-icon.svg');
+  content: url('../img/top/top-button-icon.svg');
   position: absolute;
   top: 20px;
   left: 50px;
@@ -244,8 +244,183 @@ a {
 }
 .top__card-artist::before {
   position: absolute;
-  content: url('../img/svg/top-card-avatar.svg');
+  content: url('../img/top/top-card-avatar.svg');
   left: -36px;
 }
 
 /* -----  Trending Collection  ----- */
+.padding-wrapper {
+  padding: 80px 0;
+}
+.trendcol__header {
+  font-family: 'Work Sans Semibold';
+  font-size: 3.8rem;
+  line-height: 120%;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.trendcol__desc {
+  font-family: 'Work Sans Regular';
+  font-size: 2.2rem;
+  line-height: 160%;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+.trendcol__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.trendcol__container-item {
+  max-width: 330px;
+}
+.trendcol__container-item-gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.trendcol__container-item-gallery_big {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.trendcol__container-item-gallery_small {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.small-empty {
+  width: 100px;
+  height: 100px;
+  font-family: 'Space Mono Bold';
+  font-size: 2.2rem;
+  line-height: 160%;
+  background: #A259FF;
+  padding: 32px 15px;
+}
+.trendcol__container-item-desc {
+  font-family: 'Work Sans Semibold';
+  font-size: 2.2rem;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+.trendcol__container-item-artist {
+  font-family: 'Work Sans Regular';
+  font-size: 1.6rem;
+  line-height: 140%;
+  position: relative;
+  margin-left: 36px;
+}
+.artist-one::before {
+  position: absolute;
+  content: url('../img/trendcol/section-one/avatar.svg');
+  left: -36px;
+}
+.artist-two::before {
+  position: absolute;
+  content: url('../img/trendcol/section-two/avatar.svg');
+  left: -36px;
+}
+.artist-three::before {
+  position: absolute;
+  content: url('../img/trendcol/section-three/avatar.svg');
+  left: -36px;
+}
+
+/* -----  Top Creators  ----- */
+.creators__title {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.creators__header {
+  font-family: 'Work Sans Semibold';
+  font-size: 3.8rem;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+.creators__desc {
+  font-family: 'Work Sans Regular';
+  font-size: 2.2rem;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+.creators__title-item:last-child {
+  margin-top: auto;
+}
+.creators__title-button {
+  padding: 19px 50px 19px 82px;
+  border: 2px solid #A259FF;
+  border-radius: 20px;
+  position: relative;
+  font-family: 'Work Sans Semibold';
+  font-size: 1.6rem;
+  line-height: 140%;
+  display: inline-block;
+}
+.creators__title-button::before {
+  content: url('../img/creators/button-icon.svg');
+  position: absolute;
+  left: 50px;
+}
+.creators__gallery-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.creators__card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  flex-basis: 240px;
+  flex-grow: 3;
+  background: #3B3B3B;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+.creators__card-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #2B2B2B;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  line-height: 140%;
+  color: #858584;
+  text-align: center;
+  padding-top: 4px;
+  position: absolute;
+  top: 18px;
+  left: 20px;
+}
+.creators__card-pic {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.creators__card-info {
+  text-align: center ;
+}
+.creators__card-person {
+  display: inline-block;
+  font-family: 'Work Sans Semibold';
+  font-size: 2.2rem;
+  line-height: 140%;
+}
+.creators__card-count-property {
+  font-family: 'Work Sans Regular';
+  font-size: 1.6rem;
+  line-height: 140%;
+  color: #858584;
+}
+.creators__card-count-value {
+  font-size: 1.6rem;
+  line-height: 140%;
+}
