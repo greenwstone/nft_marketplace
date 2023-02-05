@@ -141,6 +141,17 @@ a {
 }
 .header__menu_list-item {
   padding: 12px 20px;
+  transition: all 0.3s ease;
+}
+.header__menu_list-item:hover {
+  transform: scale(0.95);
+}
+.header__menu_list-item-link {
+  /* transition: all 0.3s ease; */
+}
+.header__menu_list-item-link:hover {
+  /* transform: scale(0.95); */
+
 }
 .header__button {
   padding: 19px 30px 19px 62px;
@@ -148,12 +159,16 @@ a {
   border-radius: 20px;
   line-height: 140%;
   position: relative;
+  transition: all 0.3s ease;
 }
 .header__button::before {
   content: url('../img/header/header-button-icon.svg');
   position: absolute;
   top: 20px;
   left: 30px;
+}
+.header__button:hover {
+  transform: scale(0.95);
 }
 
 /* -----  Top  ----- */
