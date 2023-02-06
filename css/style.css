@@ -208,12 +208,16 @@ a {
   padding: 19px 50px 19px 82px;
   position: relative;
   margin-bottom: 30px;
+  transition: all 0.3s ease;
 }
 .top__button::before {
   content: url('../img/top/top-button-icon.svg');
   position: absolute;
   top: 20px;
   left: 50px;
+}
+.top__button:hover {
+  transform: scale(0.95);
 }
 .top__more-info {
   display: flex;
@@ -300,10 +304,15 @@ a {
 .trendcol__container-item-gallery_big {
   border-radius: 20px;
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 .trendcol__container-item-gallery_small {
   border-radius: 20px;
   overflow: hidden;
+  transition: all 0.3s ease;
+}
+.trendcol__container-item-gallery_big:hover, .trendcol__container-item-gallery_small:hover {
+  transform: scale(0.95);
 }
 .small-empty {
   width: 100px;
@@ -375,11 +384,15 @@ a {
   font-size: 1.6rem;
   line-height: 140%;
   display: inline-block;
+  transition: all 0.3s ease;
 }
 .creators__title-button::before {
   content: url('../img/creators/button-icon.svg');
   position: absolute;
   left: 50px;
+}
+.creators__title-button:hover {
+  transform: scale(0.95);
 }
 .creators__gallery-cards {
   width: 100%;
@@ -398,6 +411,10 @@ a {
   border-radius: 20px;
   padding: 20px;
   position: relative;
+  transition: all 0.3s ease;
+}
+.creators__card:hover {
+  transform: scale(0.95);
 }
 .creators__card-number {
   display: inline-block;
@@ -455,7 +472,10 @@ a {
   gap: 30px;
 }
 .gallery__card {
-  
+  transition: all 0.3s ease;
+}
+.gallery__card:hover {
+  transform: scale(0.95);
 }
 .card__pic {
   display: block;
@@ -504,12 +524,16 @@ a {
   padding: 19px 50px 19px 82px;
   margin-top: auto;
   position: relative;
+  transition: all 0.3s ease;
 }
 .newNFT__title-button::before {
   position: absolute;
   content: url('../img/newNFT/button-icon.svg');
   top: 20px;
   left: 50px;
+}
+.newNFT__title-button:hover {
+  transform: scale(0.95);
 }
 .newNFT__gallery {
   width: 100%;
@@ -521,6 +545,10 @@ a {
   flex-basis: 330px;
   border-radius: 20px;
   overflow: hidden;
+  transition: all 0.3s ease;
+}
+.newNFT__gallery-card:hover {
+  transform: scale(0.95);
 }
 .newNFT__gallery-card-pic {
   display: block;
@@ -633,12 +661,16 @@ a {
   background: #FFFFFF;
   border-radius: 20px;
   position: relative;
+  transition: all 0.3s ease;
 }
 .mashrooms__button::before {
   position: absolute;
   content: url('../img/mashrooms/button-icon.svg');
   top: 20px;
   left: 50px;
+}
+.mashrooms__button:hover {
+  transform: scale(0.95);
 }
 .mashrooms__auction {
   background: rgba(59, 59, 59, 0.5);
@@ -766,13 +798,16 @@ a {
   display: flex;
   justify-content: space-between;
   outline: 1px solid #3B3B3B;
+  width: 425px;
+  height: 60px;
 }
 .subscribe__form-field {
-  /* outline: 0; */
+  width: 214px;
+  outline: 0;
   border: 0;
   padding: 19px 12px 19px 20px;
 }
-.subscribe__form-field::placeholder {
+.subscribe__form-field:placeholder-shown {
   font-family: 'Work Sans Regular';
   font-size: 1.6rem;
   line-height: 140%;
@@ -786,7 +821,7 @@ a {
   outline: 0;
   padding: 19px 50px 19px 82px;
   background-color: #A259FF;
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px;
   font-family: 'Work Sans Semibold';
   font-size: 1.6rem;
   line-height: 140%;
@@ -794,6 +829,11 @@ a {
   background-image: url('../img/subscribe/button-icon.svg');
   background-repeat: no-repeat;
   background-position: 50px;
+  transition: all 0.3s ease;
+}
+.subscribe__form-button:hover {
+  transform: scale(0.95);
+  transform-origin: center;
 }
 
 /*----- Footer -----*/
@@ -848,6 +888,8 @@ a {
   color: #CCCCCC;
 }
 .footer__form {
+  width: 420px;
+  height: 60px;
   background: #FFFFFF;
   border-radius: 20px;
   overflow: hidden;
@@ -858,8 +900,9 @@ a {
 .footer__form-field {
   border: 0;
   padding: 19px 12px 19px 20px;
+  width: 241px;
 }
-.footer__form-field::placeholder {
+.footer__form-field:placeholder-shown {
   font-family: 'Work Sans Regular';
   font-size: 1.6rem;
   line-height: 140%;
@@ -873,11 +916,16 @@ a {
   outline: 0;
   padding: 19px 50px;
   background-color: #A259FF;
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px;
   font-family: 'Work Sans Semibold';
   font-size: 1.6rem;
   line-height: 140%;
   color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+.footer__form-button:hover {
+  transform: scale(0.95);
+  transform-origin: center;
 }
 .footer__linebreak {
   width: 100%;
@@ -891,3 +939,5 @@ a {
   line-height: 110%;
   color: #CCCCCC;
 }
+
+/*----- Responsive -----*/
